@@ -7,7 +7,6 @@ MANDATORY
  * Decide RigidBody or CharacterController
  * UI for health, maybe spells if we go that route
  * Figure out how I wanna do hitboxes
- * Sound effects
 OPTIONAL
  * Pause Menu
  * Ragdoll
