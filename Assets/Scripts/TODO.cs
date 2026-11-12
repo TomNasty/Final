@@ -7,11 +7,10 @@ MANDATORY
  * Decide RigidBody or CharacterController
  * UI for health, maybe spells if we go that route
  * Figure out how I wanna do hitboxes
- * Music in Unity
 OPTIONAL
- * CRT-Filter
  * Pause Menu
  * Main Menu
  * Ragdoll
+ * Sound effects
 
 */
