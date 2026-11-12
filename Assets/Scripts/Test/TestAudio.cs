@@ -7,11 +7,15 @@ public class TestAudio : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown("q")){
-            MusicManager.instance.PlayMusic("BossRend1");
+            MusicManager.instance.PlayMusic("MenuTheme");
         }
         else if (Input.GetKeyDown("w"))
         {
-            MusicManager.instance.PlayMusic("TheLick");
+            MusicManager.instance.PlayMusic("GameOver");
+        }
+        else if (Input.GetKeyDown("e"))
+        {
+            MusicManager.instance.PlayMusic("Boss");
         }
     }
 }

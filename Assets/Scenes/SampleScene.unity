@@ -909,10 +909,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicLibrary
   tracks:
-  - trackName: BossRend1
-    clip: {fileID: 8300000, guid: 11c5d4904e9e4024182c164f3eaa8636, type: 3}
-  - trackName: TheLick
-    clip: {fileID: 8300000, guid: be6d6f68abced2643be40ba0a0d4ae7a, type: 3}
+  - trackName: MenuTheme
+    clip: {fileID: 8300000, guid: 6293f5f5eeb642e44b429b93ef28e335, type: 3}
+  - trackName: Boss
+    clip: {fileID: 8300000, guid: f6763f926d734a24bae0096cd8d1b153, type: 3}
+  - trackName: GameOver
+    clip: {fileID: 8300000, guid: 1360def68f3076c4589239f41e9c4db1, type: 3}
 --- !u!4 &1722777062
 Transform:
   m_ObjectHideFlags: 0
