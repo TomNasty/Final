@@ -17,5 +17,13 @@ public class TestAudio : MonoBehaviour
         {
             MusicManager.instance.PlayMusic("Boss");
         }
+        else if (Input.GetKeyDown("a"))
+        {
+            //SoundManager.instance.PlaySound3D("l", transform.position);
+        }
+        else if (Input.GetKeyDown("s"))
+        {
+            //SoundManager.instance.PlaySound2D("l");
+        }
     }
 }
