@@ -960,8 +960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2830dd1840b58f04c81ea43662b54a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  sfxLibrary: {fileID: 0}
-  sfx2DSource: {fileID: 0}
+  sfxLibrary: {fileID: 1722777065}
+  sfx2DSource: {fileID: 1743040545}
 --- !u!114 &1722777065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,7 +974,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7bb743718dfe3c46905be55f61e4f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundLibrary
-  soundEffects: []
+  soundEffects:
+  - groupID: B_Charge
+    clips:
+    - {fileID: 8300000, guid: 739421c1433e7104eacdd283939f8bb2, type: 3}
+  - groupID: B_Defeat
+    clips:
+    - {fileID: 8300000, guid: f0b28f8021305904b82e8a6ff50c2899, type: 3}
+  - groupID: B_Steps
+    clips:
+    - {fileID: 8300000, guid: 483550dc40fb10e4b95cef8e9b1bb334, type: 3}
+  - groupID: H_Steps
+    clips:
+    - {fileID: 8300000, guid: ef6e04819ae084641b13f786d8b9713c, type: 3}
+  - groupID: H_Heals
+    clips:
+    - {fileID: 8300000, guid: 4c21510bcba2c0c48b04ccedfdcc6b53, type: 3}
+  - groupID: H_Swim
+    clips:
+    - {fileID: 8300000, guid: d31d3e83e97580a4e84d9d7df90bb776, type: 3}
 --- !u!1 &1743040543
 GameObject:
   m_ObjectHideFlags: 0
