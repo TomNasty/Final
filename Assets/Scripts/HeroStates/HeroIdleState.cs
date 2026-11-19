@@ -6,19 +6,27 @@ public class HeroIdleState : HeroBaseState
     public override void EnterState(HeroStateManager hero, Animator animator)
     {
         Debug.Log("idle");
-        animator.SetInteger("AnimID", 0);
+        animator.Play("Idle");
     }
     public override void UpdateState(HeroStateManager hero, Animator animator)
     {
 
-        /*if (Input.GetKey(robot.weakBtn))
+        if (Input.GetKey(hero.attackBtn))
         {
-            robot.SwitchState(robot.punchState);
+            hero.SwitchState(hero.attackState);
         }
-        else if (Input.GetKey(robot.strongBtn))
+        else if (Input.GetKey(hero.dodgeBtn))
         {
-            robot.SwitchState(robot.punchFinal);
-        }*/
+            hero.SwitchState(hero.dodgeState);
+        }
+        else if (Input.GetKey(hero.parryBtn))
+        {
+            hero.SwitchState(hero.parryState);
+        }
+        else if (Input.GetKey(hero.leftBtn) || Input.GetKey(hero.rightBtn) || Input.GetKey(hero.forwardBtn) || Input.GetKey(hero.backBtn))
+        {
+            hero.SwitchState(hero.swimState);
+        }
     }
     public override void OnCollisionEnter(HeroStateManager hero, Animator animator)
     {
