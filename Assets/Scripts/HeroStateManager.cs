@@ -31,7 +31,7 @@ public class HeroStateManager : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         //default state
-        //currentState = idleState;
+        currentState = idleState;
         currentState.EnterState(this, animator);
     }
     /*public void IveBeenHit(Collid collid)
