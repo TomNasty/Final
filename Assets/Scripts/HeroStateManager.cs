@@ -17,7 +17,7 @@ public class HeroStateManager : MonoBehaviour
     public string dodgeBtn = "o";
     public string parryBtn = "p";
     [Header("Movement")]
-    public float moveSpeed = 100;
+    public float moveSpeed = 1.0f;
     [Header("Hitboxes")]
 
     [Header("States")]

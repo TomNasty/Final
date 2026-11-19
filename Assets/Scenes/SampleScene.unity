@@ -543,7 +543,7 @@ MonoBehaviour:
   attackBtn: i
   dodgeBtn: o
   parryBtn: p
-  moveSpeed: 0
+  moveSpeed: 1
 --- !u!4 &845688718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: afdff5315859e214889917893b21a50e, type: 3}
