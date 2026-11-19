@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class HeroStateManager : MonoBehaviour
 {
+    //things
     Animator animator;
+    Rigidbody rb;
 
     public int hp = 1000;
-    //controls
+    [Header("Controls")]
     public string forwardBtn = "w";
     public string leftBtn = "a";
     public string backBtn = "s";
@@ -14,9 +16,11 @@ public class HeroStateManager : MonoBehaviour
     public string attackBtn = "i";
     public string dodgeBtn = "o";
     public string parryBtn = "p";
-    //hitboxes
+    [Header("Movement")]
+    public float moveSpeed = 100;
+    [Header("Hitboxes")]
 
-    //states
+    [Header("States")]
     HeroBaseState currentState;//reference to active state
     public HeroIdleState idleState = new HeroIdleState();
     public HeroSwimState swimState = new HeroSwimState();
@@ -30,6 +34,8 @@ public class HeroStateManager : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
         //default state
         currentState = idleState;
         currentState.EnterState(this, animator);
@@ -49,6 +55,13 @@ public class HeroStateManager : MonoBehaviour
     {
         currentState = state;
         state.EnterState(this, animator);
+    }
+    public void MovePlayer(float left, float right, float forward, float back)
+    {
+        Vector3 movement = new Vector3((left + right) * moveSpeed, 0.0f, (forward + back) * moveSpeed);
+        Debug.Log(movement);
+        rb.AddForce(movement, ForceMode.Force);
+        transform.rotation = Quaternion.LookRotation(movement);
     }
     public void CollisionFunc(int launchPow, int damage)
     {
