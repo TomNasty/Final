@@ -6,7 +6,7 @@ public class TestAudio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("q")){
+        /*if (Input.GetKeyDown("q")){
             MusicManager.instance.PlayMusic("MenuTheme");
         }
         else if (Input.GetKeyDown("w"))
@@ -40,6 +40,6 @@ public class TestAudio : MonoBehaviour
         else if (Input.GetKeyDown("h"))
         {
             SoundManager.instance.PlaySound2D("H_Swim");
-        }
+        }*/
     }
 }
